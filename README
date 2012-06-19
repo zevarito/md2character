@@ -1,5 +1,7 @@
 == MD2Character ==
 
-Is Three.js plugin to load MD2 JSON Characters.
-This code is forked from: https://github.com/mrdoob/three.js/blob/master/examples/js/MD2Character.js
-with little modifications giving it Cache ability.
+It is a Three.js plugin to load MD2 JSON Characters.
+
+Original code was forked from: https://github.com/mrdoob/three.js/blob/master/examples/js/MD2Character.js
+Original authorship: alteredq / http://alteredqualia.com
+
