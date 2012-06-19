@@ -2,6 +2,25 @@
  * @author alteredq / http://alteredqualia.com/
  */
 
+THREE.MD2CharacterTextureCache = {
+
+        cache: {},
+
+        load: function ( textureUrl, mapping, checkLoadingComplete ) {
+
+                if ( this.cache[ textureUrl ] === undefined ) {
+
+                        var texture = THREE.ImageUtils.loadTexture( textureUrl, mapping, checkLoadingComplete );
+                        this.cache[ textureUrl ] = texture;
+                        return texture;
+
+                } else {
+
+                        return this.cache[ textureUrl ];
+                }
+        }
+};
+
 THREE.MD2Character = function () {
 
 	var scope = this;
